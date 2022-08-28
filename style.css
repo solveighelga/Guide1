@@ -1,0 +1,104 @@
+html {
+    background-color: #ffffff;
+    padding: 100px;
+    transform: rotate(-5deg);
+  }
+
+/* Made backgroun as an image and a border around it */
+body {
+    width: 600px;
+    margin: auto;
+    padding: 1em;
+    border: 5px solid black;
+    background-image: url("Images/P2.jpg");     
+  }
+/* Made a transparent textbox for my poster text */
+div.poster-text { 
+  display: inline-block;
+  border: 1px solid black;
+  background-color: #ffffff;
+  padding: .5em;
+  opacity: 0.9; filter: alpha(opacity=20);
+  text-align: center;
+}
+
+/* Title animated where the colors change red, blue, green in 5 seconds */
+#title {
+  font-size: 60px;
+  font-family: "Monospace", Courier New;
+  margin: 1em;
+  text-align: center;
+  padding: 5px;
+  color: red;
+  text-shadow: 4px 3px lightblue;
+  -webkit-animation: color-change 5s infinite;
+  -moz-animation: color-change 5s infinite;
+  -o-animation: color-change 5s infinite;
+  -ms-animation: color-change 5s infinite;
+  animation: color-change 5s infinite;
+}
+@-webkit-keyframes color-change {
+  33% { color: red; }
+  66% { color: blue; }
+  100% { color: green; }
+}
+@-moz-keyframes color-change {
+  33% { color: red; }
+  66% { color: blue; }
+  100% { color: green; }
+}
+@-ms-keyframes color-change {
+  33% { color: red; }
+  66% { color: blue; }
+  100% { color: green; }
+}
+@-o-keyframes color-change {
+  33% { color: red; }
+  66% { color: blue; }
+  100% { color: green; }
+}
+@keyframes color-change {
+  33% { color: red; }
+  66% { color: blue; }
+  100% { color: green; }
+}
+
+/* Picked same size and font for text around title */
+h2 {
+    font-size: 16px;
+    font-family: "Fantasy", Papyrus;
+    margin: 0 auto;
+    text-align: center;
+}
+l2 {
+  font-size: 16px;
+  font-family: "Fantasy", Papyrus;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Added padding to position the link where I wanted it */
+footer {
+    position: relative;
+    text-align: center;
+    padding-bottom: 0em;
+    padding-top: .5em;
+    font-size: 20px;
+    color: black;
+    font: Sans-serif;
+}
+/* Wanted to have no default decoration on my link */
+a {
+  text-decoration: none;
+  color:black;
+}
+/* wanted to have no decoration or specific color when link had been viseted */
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+/* wanted to change link hover to blue */
+a:hover {
+  text-decoration: none;
+  color:blue;
+}
